@@ -830,6 +830,30 @@
     /* CONNECT START BUTTON */
 
     document.addEventListener("DOMContentLoaded", () => {
+        const scrollToTopButton = document.getElementById("scroll-to-top");
+
+        if (scrollToTopButton) {
+            const updateScrollToTopButton = () => {
+                scrollToTopButton.hidden = window.scrollY < 300;
+            };
+
+            window.addEventListener("scroll", updateScrollToTopButton, {
+                passive: true
+            });
+            updateScrollToTopButton();
+
+            scrollToTopButton.addEventListener("click", () => {
+                const prefersReducedMotion = window.matchMedia(
+                    "(prefers-reduced-motion: reduce)"
+                ).matches;
+
+                window.scrollTo({
+                    top: 0,
+                    behavior: prefersReducedMotion ? "auto" : "smooth"
+                });
+            });
+        }
+
         const startButton = document.getElementById(
             "start-lesson-2-test"
         );

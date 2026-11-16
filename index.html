@@ -11,29 +11,56 @@
 
     <!-- SAME STYLESHEET USED BY LESSON 1 -->
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="course-header.css">
 </head>
 
 <body>
 
     <!-- LESSON HEADER -->
-    <header class="lesson-header">
-        <div class="container">
-            <div class="header-content">
+  <header class="course-header">
+    <div class="container">
+        <div class="header-content">
 
-                <p class="module-label">MODULE 02</p>
-
-                <h1>Understanding Stock Fundamentals</h1>
-
-                <p class="header-description">
-                    Learn how to understand a company's shares, market value,
-                    dividends, earnings and financial performance. These concepts
-                    help traders and investors evaluate stocks and understand
-                    what may influence their prices.
-                </p>
-
+            <!-- Academy Logo -->
+            <div class="course-logo">
+                <img src="images/Trade.jpeg"
+                     alt="Stock Market Mastery Academy Logo">
             </div>
+
+            <!-- Academy Name -->
+            <h1 class="academy-title">
+                Stock Market Mastery Academy
+            </h1>
+
+            <p class="course-subtitle">
+                A Practical Guide to Investing, Trading &amp; Financial Markets
+            </p>
+
+            <div class="course-divider"></div>
+
+            <p class="course-tagline">
+                Learn • Understand • Apply
+            </p>
+
+            <!-- Module Information -->
+            <p class="module-label">MODULE 02</p>
+
+            <h2 class="module-title">
+                Understanding Stock Fundamentals
+            </h2>
+
+            <p class="header-description">
+                Learn how to understand a company's shares, market value,
+                dividends, earnings and financial performance. These concepts
+                help traders and investors evaluate stocks and understand
+                what may influence their prices.
+            </p>
+
         </div>
-    </header>
+    </div>
+</header>
+
+
 
 
     <main class="lesson-container">
@@ -1301,7 +1328,7 @@
     <!-- FOOTER -->
 <footer class="lesson-footer">
     <div class="container">
-        <p>Stock Market Education</p>
+        <p>Stock Market Mastery Academy</p>
         <p>Module 02 - Understanding Stock Fundamentals</p>
         <p>
             © <span id="currentYear"></span> All Rights Reserved.
@@ -1310,6 +1337,14 @@
     </div>
 </footer>
 
+<button
+    class="scroll-top-button"
+    id="scroll-to-top"
+    type="button"
+    aria-label="Scroll to top"
+    hidden>
+    Top
+</button>
 
     <!-- LESSON 2 EXAMINATION JAVASCRIPT -->
     <script src="js/lesson-2.js" defer></script>

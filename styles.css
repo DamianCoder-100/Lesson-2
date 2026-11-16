@@ -516,6 +516,44 @@ button {
     font-size: 0.85rem;
     opacity: 0.8;
 }
+
+.scroll-top-button {
+    position: fixed;
+    right: 24px;
+    bottom: 24px;
+    z-index: 10;
+    width: 52px;
+    height: 52px;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    color: #ffffff;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: var(--shadow);
+}
+
+.scroll-top-button:hover {
+    background-color: var(--secondary-color);
+}
+
+.scroll-top-button[hidden] {
+    display: none;
+}
+
+@media (max-width: 480px) {
+    .scroll-top-button {
+        right: 16px;
+        bottom: 16px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+}
+
 /* =====================================================
    15. RESPONSIVE DESIGN - TABLETS
 ===================================================== */
